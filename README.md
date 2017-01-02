@@ -1,6 +1,10 @@
-# starter-slapp-app
+# PeerPraise-app
 
-This repository is meant as an example and starting point for building a Slack app on [Beep Boop][bb].  It's written in [node.js](), uses the [Slapp][slapp] library, and takes advantage of the [Slack Events API][slack-events-api].
+PeerPraise is a chatbot for praising peers inside the company.
+
+The main command is
+
+/praise @peer Here goes your praise...
 
 ## Setup Instructions
 
@@ -37,4 +41,3 @@ Your bot will not show as "online", which is a current limitation of the [Slack 
 [slapp]: https://github.com/BeepBoopHQ/slapp
 [slack-events-api]: https://api.slack.com/events-api
 [presence-polyfill]: https://github.com/BeepBoopHQ/beepboop-slapp-presence-polyfill
-

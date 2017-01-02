@@ -16,14 +16,12 @@ var slapp = Slapp({
 })
 
 
+var a = require('./praise-command.js')(slapp)
+
 var HELP_TEXT = `
 I will respond to the following messages:
 \`help\` - to see this message.
-\`hi\` - to demonstrate a conversation that tracks state.
-\`thanks\` - to demonstrate a simple response.
-\`<type-any-other-text>\` - to demonstrate a random emoticon response, some of the time :wink:.
-\`attachment\` - to see a Slack attachment message.
-`
+\`praise\` - praise someone`
 
 //*********************************************
 // Setup different handlers for messages
@@ -33,6 +31,9 @@ I will respond to the following messages:
 slapp.message('help', ['mention', 'direct_message'], (msg) => {
   msg.say(HELP_TEXT)
 })
+
+
+
 
 // "Conversation" flow that tracks state - kicks off when user says hi, hello or hey
 slapp

@@ -4,7 +4,7 @@
   "description": "PeerPraise",
   "scripts": {
     "watch": "nodemon server.js",
-    "test": "standard"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "slapp-context-beepboop": "^1.1.0",
     "slapp-convo-beepboop": "^1.0.0",
     "standard": "^8.4.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0"
   }
 }
